@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Table</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+    }
+    .table-container {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th {
+      background-color: #f3f7fa;
+      color: #7a8a9b;
+      padding: 12px 15px;
+      font-weight: 600;
+      font-size: 14px;
+      border-bottom: 1px solid #e0e6eb;
+    }
+    td {
+      padding: 14px 15px;
+      border-bottom: 1px solid #f0f0f0;
+      color: #333;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .product-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid #e4e7eb;
+      display: block;
+    }
+    .action-btn {
+      border: none;
+      border-radius: 6px;
+      padding: 8px 10px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .edit {
+      background-color: #00b0f0;
+    }
+    .delete {
+      background-color: #ff3b30;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .header input {
+      padding: 8px;
+      border: 1px solid #d9dee3;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    .header button {
+      background-color: #00b0f0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="table-container">
+    <div class="header">
+      <h3>Product Details</h3>
+      <div>
+        <input type="text" placeholder="Product" />
+        <button>+ Add New</button>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Product</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Owner</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><img src="watch.png" alt="watch" class="product-img"></td>
+          <td>smart watch</td>
+          <td>test@gmail.com</td>
+          <td>apple</td>
+          <td>
+            <button class="action-btn edit">✎</button>
+            <button class="action-btn delete">🗑</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img src="watch.png" alt="watch" class="product-img"></td>
+          <td>smart watch</td>
+          <td>test@gmail.com</td>
+          <td>apple</td>
+          <td>
+            <button class="action-btn edit">✎</button>
+            <button class="action-btn delete">🗑</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img src="watch.png" alt="watch" class="product-img"></td>
+          <td>smart watch</td>
+          <td>test@gmail.com</td>
+          <td>apple</td>
+          <td>
+            <button class="action-btn edit">✎</button>
+            <button class="action-btn delete">🗑</button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="watch.png" alt="watch" class="product-img"></td>
+          <td>smart watch</td>
+          <td>test@gmail.com</td>
+          <td>apple</td>
+          <td>
+            <button class="action-btn edit">✎</button>
+            <button class="action-btn delete">🗑</button>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><img src="watch.png" alt="watch" class="product-img"></td>
+          <td>smart watch</td>
+          <td>test@gmail.com</td>
+          <td>apple</td>
+          <td>
+            <button class="action-btn edit">✎</button>
+            <button class="action-btn delete">🗑</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
